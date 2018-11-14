@@ -3,7 +3,7 @@ import React from 'react'
 import { Text, SafeAreaView, StyleSheet } from 'react-native'
 
 // components
-import { RoundedButton, Title, ImageWrap } from '../components'
+import { Button, Title, ImageWrap } from '../components'
 import { Colors } from '../themes'
 
 const styles = StyleSheet.create({
@@ -21,7 +21,7 @@ export default class RootContainer extends React.PureComponent<null> {
       <SafeAreaView style={styles.container}>
         <Title>HelliT</Title>
         <ImageWrap uri={require('../../assets/hi.png')} />
-        <RoundedButton onPress={() => null}>Button text</RoundedButton>
+        <Button onPress={() => {alert("Ahoj svete!")}}> Ahoj </Button>
       </SafeAreaView>
     )
   }
